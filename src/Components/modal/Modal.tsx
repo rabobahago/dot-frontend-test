@@ -1,3 +1,4 @@
+//style components created for modal
 import {
     ModalBlock,
     ModalClose,
@@ -6,11 +7,13 @@ import {
     ModalOverlay,
     ModalTitle,
   } from "./modal.style";
+  //props types 
   type ModalProps= {
       close: () => void;
       title: string;
       active: boolean;
   }
+  // es6 way distructuring props passed ballot components
   const Modal = ({ title, active, close }:ModalProps) => {
     return (
       <>

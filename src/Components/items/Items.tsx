@@ -1,4 +1,5 @@
 import './items.css'
+// props types coming Ballot component
 type itemProp= {
     
     id: number,
@@ -13,11 +14,11 @@ type IProps= {
     category: string,
     selectedItems: any
 }
-
+// es6 way of distructuring of props
 const Items = ({items, category, selectedItems, handleSelectedItem}: IProps)=>{
     return(
         <div className="grid">
-
+        {/* map items being sent from ballot component */}
             {items.map((item)=>{   
                 return<div key={item.id} >
                     <h5>{item.title}</h5>
